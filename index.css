@@ -49,6 +49,16 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
+header .image {
+  /* display: inline-block; */
+  object-fit: cover;
+  /* margin: 0;
+  border: 0;
+  background: transparent; */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 .logo {
   height: 100px;
   width: 100px;
@@ -108,6 +118,11 @@ section:not(:last-child) {
 .option-list {
   margin-top: 30px;
 }
+.check-list .list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .check-list .list-item,
 .option-list .list-item {
   width: calc(50% - 20px);
@@ -142,6 +157,7 @@ section:not(:last-child) {
 }
 .list-item h4 {
   margin: 0;
+  margin-right: 40px;
   margin-bottom: 20px;
   font-family: "RoadRadio", "Roboto", sans-serif;
   font-weight: bold;
@@ -299,6 +315,9 @@ footer h2 {
   text-transform: uppercase;
 }
 @media (max-width: 599px) {
+  .logo {
+    left: 30px;
+  }
   header {
     min-height: 450px;
     background-image: url("./data/header-mobile.png");
@@ -336,6 +355,51 @@ footer h2 {
     padding: 10px;
   }
   section.test-servant h3 {
-    max-width: 265px;
+    max-width: 50%;
+  }
+  .check-list .list-item:nth-child(1),
+  .check-list .list-item:nth-child(2),
+  .check-list .list-item:nth-child(3),
+  .check-list .list-item:nth-child(4) {
+    background-size: 100px, auto;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    min-height: 358px;
+    background-size: contain;
+  }
+  .logo {
+    left: 20px;
+  }
+  .option-list .list-item .list-item-content {
+    max-width: 65%;
+  }
+  footer {
+    padding: 23px 10px;
+  }
+  .facebook-container,
+  .adrress-container,
+  .phone-container {
+    padding: 5px;
+  }
+  .check-list .list-item:nth-child(1),
+  .check-list .list-item:nth-child(2),
+  .check-list .list-item:nth-child(3),
+  .check-list .list-item:nth-child(4) {
+    background-size: 80px, auto;
+  }
+
+  .check-list .list-item:nth-child(1) {
+    background-position: top 10px right 10px, center;
+  }
+  .check-list .list-item:nth-child(2) {
+    background-position: top 20px right, center;
+  }
+  .check-list .list-item:nth-child(3) {
+    background-position: top 20px right 10px, center;
+  }
+  .check-list .list-item:nth-child(4) {
+    background-position: top 10px right 10px, center;
   }
 }
