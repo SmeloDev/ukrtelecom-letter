@@ -72,7 +72,9 @@ img.mobile-image {
 }
 
 .logo {
-  display: block;
+  display: flex;
+  align-items:center;
+  justify-content: center;
   height: 100px;
   width: 100px;
   border-radius: 0 0 13px 13px;
@@ -80,9 +82,9 @@ img.mobile-image {
   left: 50px;
 
   background-color: #fff;
-  background-image: url("./data/ukrtelecom_logo.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-image: url("./data/ukrtelecom_logo.svg"); */
+  /* background-position: center;
+  background-repeat: no-repeat; */
 }
 main {
   max-width: 600px;
@@ -98,6 +100,7 @@ main h2 {
   color: #654180;
   font-size: 22px;
   line-height: 1;
+  text-transform: uppercase;
 }
 main h4 {
   font-family: "Roboto", sans-serif;
@@ -419,7 +422,9 @@ footer h2 {
 <body>
 
 <header>
-    <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer"></a>
+    <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer">
+        <img src="./data/ukrtelecom_logo.svg" alt="">
+    </a>
     <img class="image mobile-image" src="./data/header-mobile.png ">
     <img class="image desktop-image" src="./data/header-desktop.png ">
 </header>
