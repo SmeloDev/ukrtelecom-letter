@@ -314,6 +314,11 @@ footer h2 {
 .adrress-container span {
   text-transform: uppercase;
 }
+
+.adrress-container a {
+  margin-left: 20px;
+}
+
 @media (max-width: 599px) {
   .logo {
     left: 30px;
@@ -364,9 +369,10 @@ footer h2 {
     background-size: 100px, auto;
   }
 }
+
 @media (max-width: 480px) {
   header {
-    min-height: 358px;
+    min-height: 406px;
     background-size: contain;
   }
   .logo {
@@ -401,5 +407,10 @@ footer h2 {
   }
   .check-list .list-item:nth-child(4) {
     background-position: top 10px right 10px, center;
+  }
+}
+@media (max-width: 424px) {
+  header {
+    min-height: 358px;
   }
 }
