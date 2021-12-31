@@ -58,7 +58,7 @@ header .image {
   height: auto;
 }
 
-.image.mobile-image {
+img.mobile-image {
   display: none;
 }
 
@@ -321,10 +321,10 @@ footer h2 {
   .logo {
     left: 30px;
   }
-  .image.mobile-image {
+  img.mobile-image {
     display: block;
   }
-  .image.desktop-image {
+  img.desktop-image {
     display: none;
   }
   main {
