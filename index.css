@@ -94,6 +94,7 @@ main h2::before {
   background: linear-gradient(105.64deg, #a80dc6 -24.86%, #3a17d6 100%);
   border-radius: 0 10px 10px 0;
 }
+
 section:not(:last-child) {
   margin-bottom: 35px;
 }
