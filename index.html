@@ -71,7 +71,7 @@ img.mobile-image {
   display: none;
 }
 
-.logo {
+/* .logo {
   display: flex;
   align-items:center;
   justify-content: center;
@@ -81,7 +81,7 @@ img.mobile-image {
   position: absolute;
   left: 50px;
   background-color: #fff;
-}
+} */
 main {
   max-width: 600px;
   position: relative;
@@ -401,7 +401,15 @@ footer h2 {
 <body>
 
 <header>
-    <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer">
+    <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer" style="display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 0 0 13px 13px;
+  position: absolute;
+  left: 50px;
+  background-color: #fff;">
         <img src="./data/ukrtelecom_logo.svg" alt="">
     </a>
     <img class="image mobile-image" src="./data/header-mobile.png ">
