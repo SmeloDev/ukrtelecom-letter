@@ -119,22 +119,22 @@ section h2::before {
 section:not(:last-child) {
   margin-bottom: 35px;
 }
-.check-list,
+/* .check-list,
 .option-list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
-}
-.option-list {
+} */
+/* .option-list {
   margin-top: 30px;
-}
-.check-list .list-item {
+} */
+/* .check-list .list-item {
     position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 .check-list .list-item,
 .option-list .list-item {
   width: calc(50% - 20px);
@@ -144,20 +144,20 @@ section:not(:last-child) {
   color: #fff;
   overflow: hidden;
 }
-.check-list .list-item:nth-child(1) {
+/* .check-list .list-item:nth-child(1) {
   background-image: 
     linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
-}
-.check-list .list-item:nth-child(2) {
+} */
+/* .check-list .list-item:nth-child(2) {
   background-image: linear-gradient(95.03deg, #f5277e 3.3%, #5536e0 99.92%);
-}
-.check-list .list-item:nth-child(3) {
+} */
+/* .check-list .list-item:nth-child(3) {
   background-image: linear-gradient(95.03deg, #00bcf6 3.3%, #014fd5 99.92%);
 
 }
 .check-list .list-item:nth-child(4) {
   background-image: linear-gradient(95.03deg, #fec200 3.3%, #ff6f0a 99.92%);
-}
+} */
 
 .list-item h4 {
   margin: 0;
@@ -437,28 +437,47 @@ footer h2 {
                   font-weight: normal;
                   line-height: 1.14;">
         Ми склали чек-лист для цифрової трансформації, який стане у пригоді й малому, і середньому бізнесу.</h4>
-        <div class="check-list">
-            <div class="list-item">
+        <div class="check-list" style="display: flex;
+                                flex-wrap: wrap;
+                                margin-left: -10px;
+                                margin-right: -10px;">
+            <div class="list-item" style=" position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);">
                 <h4>Швидкий оптичний інтернет</h4></span>
                 <img class="item-logo logo_1" src="./data//list-item-1.png" alt="">
                 <p>Необмежений доступ до Інтернет на високій швидкості до 1 Гбіт/с</p>
                 <a href="https://b2b.ukrtelecom.ua/sbservices/opticheskiy-internet-41" class="button" target="_blank" rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
             </div>
-            <div class="list-item">
+            <div class="list-item" style=" position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    background-image: linear-gradient(95.03deg, #f5277e 3.3%, #5536e0 99.92%);">
                 <h4>Хмарна АТС для бізнесу</h4>
                 <img class="item-logo logo_2" src="./data//list-item-2.png" alt="">
                 <p>Зручний інструмент для роботи команди в онлайн в єдиній корпоративній мережі</p>
                 <a href="https://b2b.ukrtelecom.ua/sbservices/oblachnaya-ats-27" class="button" target="_blank"
                     rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
             </div>
-            <div class="list-item">
+            <div class="list-item" style=" position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    background-image: linear-gradient(95.03deg, #00bcf6 3.3%, #014fd5 99.92%);">
                 <h4>Анти-вірусний захист</h4>
                 <img class="item-logo logo_3" src="./data//list-item-3.png" alt="">
                 <p>Сучасне рішення для безпеки локальної мережі із комплексним захистом</p>
                 <a href="https://antivirus.ukrtelecom.ua/" class="button" target="_blank"
                     rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
             </div>
-            <div class="list-item">
+            <div class="list-item" style=" position: relative;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    background-image: linear-gradient(95.03deg, #fec200 3.3%, #ff6f0a 99.92%);">
                 <h4>Microsoft Office 365</h4>
                 <img class="item-logo logo_4" src="./data//list-item-4.png" alt="">
                 <p>Комплексне SaaS рішення для бізнесу з готовими наборами хмарних сервісів</p>
@@ -474,7 +493,11 @@ footer h2 {
                 line-height: 1;
                 text-transform: uppercase;">
                 Чому вигідно співпрацювати з Укртелеком Бізнес:</h2>
-        <div class="option-list">
+        <div class="option-list" style="display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+   margin-top: 30px;">
             <div class="list-item">
                 <div class="list-item-logo">
                     <img src="./data//no-money.svg" alt="">
