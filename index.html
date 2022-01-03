@@ -49,12 +49,12 @@ h3 {
   margin: 0;
 }
 
-header {
+/* header {
   position: relative;
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff;
-}
+} */
 
 header .image {
   display: block;
@@ -82,29 +82,28 @@ img.mobile-image {
   left: 50px;
   background-color: #fff;
 } */
-main {
+/* main {
   max-width: 600px;
   position: relative;
   margin: 0 auto;
   padding: 40px 50px;
   min-height: 400px;
   background-color: #dbe3ff;
-}
-main h2 {
-  display: flex;
+} */
+/* main h2 {
   font-family: "RoadRadio", "Roboto", sans-serif;
   color: #654180;
   font-size: 22px;
   line-height: 1;
   text-transform: uppercase;
-}
-main h4 {
+} */
+/* main h4 {
   font-family: "Roboto", sans-serif;
   color: #654180;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.14;
-}
+} */
 main h2::before {
   content: "";
   display: block;
@@ -400,25 +399,44 @@ footer h2 {
 </head>
 <body>
 
-<header>
-    <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer" style="display: flex;
-  align-items:center;
-  justify-content: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 0 0 13px 13px;
-  position: absolute;
-  left: 50px;
-  background-color: #fff;">
+<header style="position: relative;
+              max-width: 600px;
+              margin: 0 auto;
+              background-color: #fff;">
+    <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer" 
+    style="display: flex;
+      align-items:center;
+      justify-content: center;
+      height: 100px;
+      width: 100px;
+      border-radius: 0 0 13px 13px;
+      position: absolute;
+      left: 50px;
+      background-color: #fff;">
         <img src="./data/ukrtelecom_logo.svg" alt="">
     </a>
     <img class="image mobile-image" src="./data/header-mobile.png ">
     <img class="image desktop-image" src="./data/header-desktop.png ">
 </header>
-<main>
+<main style="max-width: 600px;
+            position: relative;
+            margin: 0 auto;
+            padding: 40px 50px;
+            min-height: 400px;
+            background-color: #dbe3ff;">
     <section>
-        <h2>Діджиталізація бізнесу стане рушійною силою для розвитку компанії</h2>
-        <h4>Ми склали чек-лист для цифрової трансформації, який стане у пригоді й малому, і середньому бізнесу.</h4>
+        <h2 style=" font-family: RoadRadio, Roboto, sans-serif;
+                color: #654180;
+                font-size: 22px;
+                line-height: 1;
+                text-transform: uppercase;">
+        Діджиталізація бізнесу стане рушійною силою для розвитку компанії</h2>
+        <h4 style="font-family: Roboto, sans-serif;
+                  color: #654180;
+                  font-size: 14px;
+                  font-weight: normal;
+                  line-height: 1.14;">
+        Ми склали чек-лист для цифрової трансформації, який стане у пригоді й малому, і середньому бізнесу.</h4>
         <div class="check-list">
             <div class="list-item">
                 <h4>Швидкий оптичний інтернет</h4></span>
@@ -450,7 +468,12 @@ footer h2 {
         </div>
     </section>
     <section>
-        <h2>Чому вигідно співпрацювати з Укртелеком Бізнес:</h2>
+        <h2 style=" font-family: RoadRadio, Roboto, sans-serif;
+                color: #654180;
+                font-size: 22px;
+                line-height: 1;
+                text-transform: uppercase;">
+                Чому вигідно співпрацювати з Укртелеком Бізнес:</h2>
         <div class="option-list">
             <div class="list-item">
                 <div class="list-item-logo">
