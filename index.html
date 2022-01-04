@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="index.css" rel="stylesheet"> -->
     <title>Ukrtelecom</title>
     <style type="text/css">
         @font-face {
-  font-family: "RoadRadio";
-  src: local("RoadRadio"), url("./fonts/RoadRadio-Thin.ttf") format("truetype");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "RoadRadio";
-  src: local("RoadRadio"), url("./fonts/RoadRadio-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "RoadRadio";
-  src: local("RoadRadio"),
-    url("./fonts/RoadRadio-Reguar.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "RoadRadio";
-  src: local("RoadRadio"), url("./fonts/RoadRadio-Bold.ttf") format("truetype");
-  font-weight: 700;
-}
+          font-family: "RoadRadio";
+          src: local("RoadRadio"), url("http://ukrtelecom.smelo.com.ua/fonts/RoadRadio-Thin.ttf") format("truetype");
+          font-weight: 100;
+        }
+        @font-face {
+          font-family: "RoadRadio";
+          src: local("RoadRadio"), url("http://ukrtelecom.smelo.com.ua/fonts/RoadRadio-Light.ttf") format("truetype");
+          font-weight: 300;
+        }
+        @font-face {
+          font-family: "RoadRadio";
+          src: local("RoadRadio"),
+            url("http://ukrtelecom.smelo.com.ua/fonts/RoadRadio-Reguar.ttf") format("truetype");
+          font-weight: 400;
+        }
+        @font-face {
+          font-family: "RoadRadio";
+          src: local("RoadRadio"), url("http://ukrtelecom.smelo.com.ua/fonts/RoadRadio-Bold.ttf") format("truetype");
+          font-weight: 700;
+        }
 
 * {
   box-sizing: border-box;
@@ -49,14 +48,7 @@ h3,h4,p {
   margin: 0;
 }
 
-/* header {
-  position: relative;
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #fff;
-} */
-
-header .image {
+/* header .image {
   display: block;
   object-fit: cover;
   margin: 0;
@@ -65,264 +57,59 @@ header .image {
   width: 100%;
   max-width: 100%;
   height: auto;
-}
+} */
 
-img.mobile-image {
+.mobile-image {
   display: none;
 }
-section h2::before {
-  content: "";
-  display: block;
-  height: 44px;
-  width: 35px;
-  position: absolute;
-  left: 0;
 
-  background: linear-gradient(105.64deg, #a80dc6 -24.86%, #3a17d6 100%);
-  border-radius: 0 10px 10px 0;
-}
-
-section:not(:last-child) {
-  margin-bottom: 35px;
-}
-.check-list .list-item,
-.option-list .list-item {
-  width: calc(50% - 20px);
-  padding: 30px 70px 20px 17px;
-  margin: 10px;
-  border-radius: 25px;
-  color: #fff;
-  overflow: hidden;
-}
-
-.list-item h4 {
-  margin: 0;
-  margin-right: 40px;
-  margin-bottom: 10px;
-  font-family: "RoadRadio", "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #fff;
-  z-index: 2;
-}
-.list-item p {
-  margin: 0;
-  margin-bottom: 10px;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  z-index: 2;
-}
-.option-list .list-item {
-  display: flex;
-  align-items: center;
-
-  padding: 0;
-  color: #703e83;
-}
-.option-list .list-item-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 53px;
-  height: 53px;
-  border-radius: 50%;
-  margin-right: 5px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.option-list .list-item:nth-child(1) .list-item-logo {
-  background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
-}
-.option-list .list-item:nth-child(2) .list-item-logo {
-  background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
-}
-.option-list .list-item:nth-child(3) .list-item-logo {
-  background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
-}
-.option-list .list-item:nth-child(4) .list-item-logo {
-  background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
-}
-.option-list .list-item .list-item-content {
-  max-width: 76%;
-}
-section.test-servant {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 24px;
-  color: #fff;
-  background: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
-  border-radius: 25px;
-}
-section.test-servant h3 {
-  max-width: 300px;
-  font-family: "RoadRadio", "Roboto", sans-serif;
-  font-size: 22px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-.button {
-  width: 135px;
-  display: block;
-  position: relative;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: capitalize;
-}
-
-.button span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%,-50%);
-}
-
-footer {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 23px 53px;
-
-  background-color: #654180;
-
-  color: #fff;
-}
-
-footer h2 {
-  margin: 0 0 20px 0;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "RoadRadio", "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 26px;
-}
-
-.info-section {
-  margin: 0 auto;
-  max-width: 500px;
-  display: flex;
-  flex-wrap: wrap;
-
-  border: 3px solid #fff;
-
-  font-size: 10px;
-  line-height: 1.2;
-}
-.facebook-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  width: 100%;
-  border-bottom: 3px solid #fff;
-}
-.facebook-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.adrress-container,
-.phone-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 15px;
-  width: 50%;
-}
-.adrress-container {
-  border-right: 3px solid #fff;
-}
-.adrress-container span {
-  text-transform: uppercase;
-}
-
-.adrress-container a {
-  margin-left: 20px;
+td.is-mobile {
+  display: none;
 }
 
 @media (max-width: 599px) {
+  table.check-list {
+  border-spacing: 4px !important; 
+}
+/* td.is-desktop {
+  display: none;
+}
+td.is-mobile {
+  display: block;
+} */
+
+div.test-servant {
+  padding: 20px !important;
+
+}
+
   .logo {
     left: 30px;
   }
-  img.mobile-image {
+  /* .mobile-image {
     display: block;
-  }
-  img.desktop-image {
-    display: none;
-  }
-  section.main {
-    max-width: 480px !important;
-    padding: 30px 15px !important;
+  } */
+  /* .desktop-image {
+    display: none !important;
+  } */
+  section.main h5, table.check-list {
+    padding: 0 15px !important;
   }
   main h2 {
     margin-left: 30px;
   }
   footer {
-    max-width: 480px;
     padding: 23px 20px;
   }
-  .check-list .list-item,
-  .option-list .list-item {
-    margin: 0;
-  }
-  .check-list .list-item,
-  .option-list .list-item {
-    width: calc(50% - 10px);
-    padding: 30px 55px 20px 17px;
-    margin: 5px;
-  }
-  .option-list .list-item {
-    padding: 0;
-  }
-  .option-list .list-item .list-item-content {
-    max-width: 70%;
-  }
-  .facebook-container,
-  .adrress-container,
-  .phone-container {
-    padding: 10px;
-  }
-  section.test-servant h3 {
-    max-width: 50%;
-  }
 }
-
-@media (max-width: 480px) {
-  .logo {
-    left: 20px;
-  }
-  .option-list .list-item .list-item-content {
-    max-width: 65%;
-  }
-  footer {
-    padding: 23px 10px;
-  }
-  .facebook-container,
-  .adrress-container,
-  .phone-container {
-    padding: 5px;
-  }
-}
-    </style>
+</style>
 </head>
+
 <body>
 
-<header style="position: relative;
+<div style="position: relative;
               max-width: 600px;
+
               margin: 0 auto;
               background-color: #fff;">
     <a class="logo" href="https://b2b.ukrtelecom.ua/" target="_blank" rel="noopener noreferrer" 
@@ -335,65 +122,80 @@ footer h2 {
       position: absolute;
       left: 50px;
       background-color: #fff;">
-        <img src="./data/ukrtelecom_logo.svg" alt="">
+        <img src="http://ukrtelecom.smelo.com.ua/img/logo.png" alt="">
     </a>
-    <img class="image mobile-image" src="./data/header-mobile.png ">
-    <img class="image desktop-image" src="./data/header-desktop.png ">
-</header>
-<section class="main" style="max-width: 600px;
+    <!-- <img class="image mobile-image" src="http://ukrtelecom.smelo.com.ua/img/header-mobile.png"> -->
+    <img style="display: block;" class="image desktop-image" src="http://ukrtelecom.smelo.com.ua/img/header-desktop.png" width="100%">
+</div>
+
+    <div class="main" style="max-width: 600px;
             position: relative;
             margin: 0 auto;
-            padding: 40px 50px;
             min-height: 400px;
             background-color: #dbe3ff;">
-    <section>
-        <h2 style=" font-family: RoadRadio, Roboto, sans-serif;
-                color: #654180;
-                font-size: 22px;
-                line-height: 1;
-                text-transform: uppercase;">
-        Діджиталізація бізнесу стане рушійною силою для розвитку компанії</h2>
-        <h4 style="font-family: Roboto, sans-serif;
+            <table style="border-spacing: 0;padding-top: 20px;">
+              <tr>
+                <td style="width: 25px; 
+                background: linear-gradient(105.64deg, #a80dc6 -24.86%, #3a17d6 100%);
+                border-radius: 0 10px 10px 0;">
+                </td>
+                <td style="padding-left:10px ;">
+                  <h2 style=" font-family: RoadRadio, Roboto, sans-serif;
+                                  color: #654180;
+                                  font-size: 22px;
+                                  line-height: 1;
+                                  text-transform: uppercase;">
+                    Діджиталізація бізнесу стане рушійною силою для розвитку компанії</h2>
+                </td>
+              </tr>
+            </table>
+        
+        <h5 style="font-family: Roboto, sans-serif;
                   color: #654180;
                   font-size: 14px;
                   font-weight: normal;
                   line-height: 1.14;
-                  margin: 20px 0;">
-        Ми склали чек-лист для цифрової трансформації, який стане у пригоді й малому, і середньому бізнесу.</h4>
-        <table>
+                  margin: 20px 0;
+                  padding: 0 35px;">
+        Ми склали чек-лист для цифрової трансформації, який стане у пригоді й малому, і середньому бізнесу.</h5>
+        <table class="check-list" style="border-spacing: 15px; padding: 0 20px;">
           <tr style="margin-bottom: 20px;">
             <td style="background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
             border-radius: 25px; color: #fff; padding: 0 10px 20px 15px;">
               <table>
                 <tr>
                   <td>
-                    <h4>Швидкий оптичний інтернет</h4>
+                    <h4 style="color: #ffffff; margin: 0; margin-bottom: 10px;font-family: RoadRadio, Roboto, sans-serif;font-weight: bold;font-size: 18px;line-height: 18px;text-transform: uppercase;">
+                      Швидкий оптичний інтернет</h4>
                   </td>
                   <td style="width: 50%;">
-                    <img width="100%" class="item-logo logo_1" src="./data//list-item-1.png" alt="">
+                    <img width="100%" class="item-logo logo_1" src="http://ukrtelecom.smelo.com.ua/img/list-item-1.png" alt="">
                   </td>
                 </tr>
               </table>
-              <p>Необмежений доступ до Інтернет на високій швидкості до 1 Гбіт/с</p>
+              <p style=" margin: 0;margin-bottom: 10px;font-family: Roboto, sans-serif;font-weight: normal;font-size: 14px;line-height: 16px;">
+                Необмежений доступ до Інтернет на високій швидкості до 1 Гбіт/с</p>
               <a href="https://b2b.ukrtelecom.ua/sbservices/opticheskiy-internet-41" class="button" target="_blank"
-              rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
+              rel="noopener noreferrer"><img src="http://ukrtelecom.smelo.com.ua/img/button.png" alt=""></a>
             </td>
             <td  style="background-image: linear-gradient(95.03deg, #f5277e 3.3%, #5536e0 99.92%);
             border-radius: 25px;color: #fff; padding: 0 10px 20px 15px;">
                 <table>
                   <tr>
                     <td>
-                      <h4>Хмарна АТС для бізнесу</h4>
+                      <h4 style="color: #ffffff; margin: 0; margin-bottom: 10px;font-family: RoadRadio, Roboto, sans-serif;font-weight: bold;font-size: 18px;line-height: 18px;text-transform: uppercase;">
+                        Хмарна АТС для бізнесу</h4>
                     </td>
                     <td style="width: 50%;">
-                      <img width="100%" class="item-logo logo_2" src="./data//list-item-2.png" alt="">
+                      <img width="100%" class="item-logo logo_2" src="http://ukrtelecom.smelo.com.ua/img/list-item-2.png" alt="">
                     </td>
                   </tr>
                 </table>
               
-              <p>Зручний інструмент для роботи команди в онлайн в єдиній корпоративній мережі</p>
+              <p style=" margin: 0;margin-bottom: 10px;font-family: Roboto, sans-serif;font-weight: normal;font-size: 14px;line-height: 16px;">
+                Зручний інструмент для роботи команди в онлайн в єдиній корпоративній мережі</p>
               <a href="https://b2b.ukrtelecom.ua/sbservices/oblachnaya-ats-27" class="button" target="_blank"
-                rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
+                rel="noopener noreferrer"><img src="http://ukrtelecom.smelo.com.ua/img/button.png" alt=""></a>
             </td>
           </tr>
           <tr>
@@ -401,131 +203,177 @@ footer h2 {
             border-radius: 25px; color: #fff; padding: 0 10px 20px 15px;">
               <table>
                 <tr>
-                  <td><h4>Анти-вірусний захист</h4></td>
-                  <td style="width: 50%;"><img width="100%" class="item-logo logo_3" src="./data//list-item-3.png" alt=""></td>
+                  <td><h4 style="color: #ffffff; margin: 0; margin-bottom: 10px;font-family: RoadRadio, Roboto, sans-serif;font-weight: bold;font-size: 18px;line-height: 18px;text-transform: uppercase;">
+                    Анти-вірусний захист</h4></td>
+                  <td style="width: 50%;"><img width="100%" class="item-logo logo_3" src="http://ukrtelecom.smelo.com.ua/img/list-item-3.png" alt=""></td>
                 </tr>
               </table>
-            <p>Сучасне рішення для безпеки локальної мережі із комплексним захистом</p>
+            <p style=" margin: 0;margin-bottom: 10px;font-family: Roboto, sans-serif;font-weight: normal;font-size: 14px;line-height: 16px;">
+              Сучасне рішення для безпеки локальної мережі із комплексним захистом</p>
             <a href="https://antivirus.ukrtelecom.ua/" class="button" target="_blank"
-              rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
+              rel="noopener noreferrer"><img src="http://ukrtelecom.smelo.com.ua/img/button.png" alt=""></a>
             </td>
             <td style="background-image: linear-gradient(95.03deg, #fec200 3.3%, #ff6f0a 99.92%);
             border-radius: 25px; color: #fff; padding: 0 10px 20px 15px;">
               <table>
                 <tr>
                   <td>
-                    <h4>Microsoft Office 365</h4>
+                    <h4 style="color: #ffffff; margin: 0; margin-bottom: 10px;font-family: RoadRadio, Roboto, sans-serif;font-weight: bold;font-size: 18px;line-height: 18px;text-transform: uppercase; 
+                    @media (max-width:599px) {font: size 15px;}">
+                      Microsoft Office 365</h4>
                   </td>
-                  <td style="width: 50%;"><img width="100%" class="item-logo logo_4" src="./data//list-item-4.png" alt=""></td>
+                  <td style="width: 50%;"><img width="100%" class="item-logo logo_4" src="http://ukrtelecom.smelo.com.ua/img/list-item-4.png" alt=""></td>
                 </tr>
               </table>
-            <p>Комплексне SaaS рішення для бізнесу з готовими наборами хмарних сервісів</p>
+            <p style=" margin: 0;margin-bottom: 10px;font-family: Roboto, sans-serif;font-weight: normal;font-size: 14px;line-height: 16px;">
+              Комплексне SaaS рішення для бізнесу з готовими наборами хмарних сервісів</p>
             <a href="https://saas.ukrtelecom.ua/" class="button" target="_blank"
-              rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
+              rel="noopener noreferrer"><img src="http://ukrtelecom.smelo.com.ua/img/button.png" alt=""></a>
             </td>
           </tr>
         </table>
-        <!-- <div class="check-list" style="display: flex;
-                                flex-wrap: wrap;
-                                margin-left: -10px;
-                                margin-right: -10px;">
-            <div class="list-item" style=" position: relative;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    background-image: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);">
-                <h4>Швидкий оптичний інтернет</h4></span>
-                <img class="item-logo logo_1" src="./data//list-item-1.png" alt="">
-                <p>Необмежений доступ до Інтернет на високій швидкості до 1 Гбіт/с</p>
-                <a href="https://b2b.ukrtelecom.ua/sbservices/opticheskiy-internet-41" class="button" target="_blank" rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
-            </div>
-            <div class="list-item" style=" position: relative;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    background-image: linear-gradient(95.03deg, #f5277e 3.3%, #5536e0 99.92%);">
-                <h4>Хмарна АТС для бізнесу</h4>
-                <img class="item-logo logo_2" src="./data//list-item-2.png" alt="">
-                <p>Зручний інструмент для роботи команди в онлайн в єдиній корпоративній мережі</p>
-                <a href="https://b2b.ukrtelecom.ua/sbservices/oblachnaya-ats-27" class="button" target="_blank"
-                    rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
-            </div>
-            <div class="list-item" style=" position: relative;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    background-image: linear-gradient(95.03deg, #00bcf6 3.3%, #014fd5 99.92%);">
-                <h4>Анти-вірусний захист</h4>
-                <img class="item-logo logo_3" src="./data//list-item-3.png" alt="">
-                <p>Сучасне рішення для безпеки локальної мережі із комплексним захистом</p>
-                <a href="https://antivirus.ukrtelecom.ua/" class="button" target="_blank"
-                    rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
-            </div>
-            <div class="list-item" style=" position: relative;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                    background-image: linear-gradient(95.03deg, #fec200 3.3%, #ff6f0a 99.92%);">
-                <h4>Microsoft Office 365</h4>
-                <img class="item-logo logo_4" src="./data//list-item-4.png" alt="">
-                <p>Комплексне SaaS рішення для бізнесу з готовими наборами хмарних сервісів</p>
-                <a href="https://saas.ukrtelecom.ua/" class="button" target="_blank"
-                    rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a>
-            </div>
-        </div> -->
-    </section>
-    <section>
-        <h2 style=" font-family: RoadRadio, Roboto, sans-serif;
-                color: #654180;
-                font-size: 22px;
-                line-height: 1;
-                text-transform: uppercase;">
-                Чому вигідно співпрацювати з Укртелеком Бізнес:</h2>
-        <div class="option-list" style="display: flex;
-  flex-wrap: wrap;
-  margin-left: -10px;
-  margin-right: -10px;
-   margin-top: 30px;">
-            <div class="list-item">
-                <div class="list-item-logo">
-                    <img src="./data//no-money.svg" alt="">
-                </div>
-                <div class="list-item-content">безкоштовний тестовий період користування послугою</div>
-            </div>
-            <div class="list-item">
-                <div class="list-item-logo">
-                    <img src="./data//locations.svg" alt="">
-                </div>
-                <div class="list-item-content">ми присутні в будь-якому куточку України</div>
-            </div>
-            <div class="list-item">
-                <div class="list-item-logo">
-                    <img src="./data//data-complexity.svg" alt="">
-                </div>
-                <div class="list-item-content">надаємо комплекс послуг</div>
-            </div>
-            <div class="list-item">
-                <div class="list-item-logo">
-                    <img src="./data//taxes.svg" alt="">
-                </div>
-                <div class="list-item-content">гнучкі тарифні плани</div>
-            </div>
-        </div>
-    </section>
-    <section class="test-servant"><h3>Оформлюйте заявку на тестування послуги</h3>
-        <a href="https://b2b.ukrtelecom.ua/sbservices/opticheskiy-internet-41" class="button" target="_blank"
-            rel="noopener noreferrer"><span>Підключити</span><img src="./data/button-border.png" alt=""></a></section>
-</section>
-<footer>
-    <h2>Будуйте свій бізнес разом з нами!</h2>
-    <div class="info-section">
-        <div class="facebook-container">Підписуйтесь на нашу сторінку, щоб бути в курсі останніх новин<a href="https://www.facebook.com/UkrtelecomBusiness" class="facebook-icon" target="_blank" rel="noopener noreferrer">
-            <img src="./data//002-facebook.svg" alt="">
-        </a></div>
-        <div class="adrress-container"><span>завітайте:</span><a href="https://goo.gl/maps/AZ4pwaknfc3nnQ5M6" target="_blank" rel="noopener noreferrer">Київ, бульвар Т.Шевченко, 18</a></div>
-        <div class="phone-container"><span>ТЕЛЕФОНУЙТЕ НАМ:</span><a href="tel:0 800 506 801">0 800 506 801</a></div>
+
+    </div >
+
+    <div style="max-width: 600px;
+            position: relative;
+            margin: 0 auto;
+            background-color: #dbe3ff;">
+
+            <table style="border-spacing: 0;padding-top: 20px;">
+              <tr>
+                <td style="width: 25px; 
+                            background: linear-gradient(105.64deg, #a80dc6 -24.86%, #3a17d6 100%);
+                            border-radius: 0 10px 10px 0;">
+                </td>
+                <td style="padding-left:10px ;">
+                  <h2 style=" font-family: RoadRadio, Roboto, sans-serif;
+                                              color: #654180;
+                                              font-size: 22px;
+                                              line-height: 1;
+                                              text-transform: uppercase;">
+                    Чому вигідно співпрацювати з Укртелеком Бізнес:</h2>
+                </td>
+              </tr>
+            </table>
+
+        <table style="border-spacing: 0px;
+        margin: 0 auto;">
+          <tr>
+            <td class="is-desktop">
+              <img style="display: block;" src="http://ukrtelecom.smelo.com.ua/img/option-desktop.png" alt="" width="100%" ></td>
+          </tr>
+          <!-- <tr>
+            <td class="is-mobile" align="center">
+              <img style="display: block;" src="http://ukrtelecom.smelo.com.ua/img/option-mobile.png" alt="" width="100%" height="auto"></td>
+          </tr> -->
+        </table>
+
     </div>
-</footer>
+
+    <div class="test-servant" style="max-width: 600px;
+            box-sizing: border-box;
+            position: relative;
+            margin: 0 auto;
+            padding: 0 35px 40px 35px;
+            background-color: #dbe3ff;">
+            <table style="padding: 15px;
+                          color: #fff;
+                          background: linear-gradient(95.03deg, #a80dc6 3.3%, #3a17d6 99.92%);
+                          border-radius: 25px;">
+              <tr>
+                <td><h3 style="font-family: RoadRadio, Roboto, sans-serif;
+                               font-size: 22px;
+                               line-height: 1;
+                               text-transform: uppercase;">
+                      Оформлюйте заявку на тестування послуги
+                      </h3>
+                </td>
+                <td>
+                  <a href="https://b2b.ukrtelecom.ua/sbservices/opticheskiy-internet-41" class="button" target="_blank"
+                    rel="noopener noreferrer"><img src="http://ukrtelecom.smelo.com.ua/img/button.png" alt=""></a>
+                </td>
+              </tr>
+            </table>
+     </div>
+
+<div class="footer" style=" max-width: 600px;
+                            margin: 0 auto;
+                            padding: 23px 35px;
+                            box-sizing: border-box;
+                            background-color: #654180;
+                            color: #fff;">
+    <h2 style="margin: 0 0 20px 0;
+               text-align: center;
+               text-transform: uppercase;
+               font-family: RoadRadio, Roboto, sans-serif;
+               font-style: normal;
+               font-weight: bold;
+               font-size: 26px;
+               line-height: 26px;">
+    Будуйте свій бізнес разом з нами!
+    </h2>
+
+    <table style="border-collapse: collapse;">
+      <tr style="border:3px solid #ffffff;">
+        <td style="padding-left: 10px;">
+          <span style="font-size: 10px;
+                    line-height: 1.2;
+                    color: #ffffff;">
+            Підписуйтесь на нашу сторінку, щоб бути в курсі останніх новин
+          </span>
+        </td>
+        <td align="right" style=" padding-right: 10px;">
+          <a href="https://www.facebook.com/UkrtelecomBusiness" class="facebook-icon" target="_blank" rel="noopener noreferrer">
+<span style="display: block; height: 20px; width: 20px;
+          border-radius: 50%; border: 1px solid #ffffff; text-align: center;"><img width="40%"
+    src="http://ukrtelecom.smelo.com.ua/img/facebook-2.png" alt=""></span>
+   
+          </a>
+        </td>
+      </tr>
+      <tr style="border:3px solid #ffffff">
+        <td style="border-right:3px solid #ffffff; padding: 10px; width: 50%;">
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <span style="font-size: 10px;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #ffffff;">завітайте:</span>
+              </td>
+              <td align="right">
+                <a style="text-transform: none; font-size: 10px;
+                    line-height: 1.2;
+                    font-weight: normal;
+                    color: #ffffff;" href="https://goo.gl/maps/AZ4pwaknfc3nnQ5M6" target="_blank" rel="noopener noreferrer">
+                  Київ, бульвар Т.Шевченко, 18</a></td>
+            </tr>
+          </table>
+        </td>
+        <td style="width: 50%;">
+          <table style="width: 100%;">
+            <tr>
+              <td>
+                <span style="font-size: 10px;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: #ffffff;">ТЕЛЕФОНУЙТЕ НАМ:</span>
+              </td>
+              <td align="right">
+                <a style="text-transform: none; font-size: 10px;
+                    line-height: 1.2;
+                    font-weight: normal;
+                    color: #ffffff;" href="tel:0 800 506 801">0 800 506 801</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+</div>
     
 </body>
 </html>
